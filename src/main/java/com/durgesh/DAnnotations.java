@@ -1,15 +1,11 @@
 package com.durgesh;
 
-import java.io.FileInputStream;
-import java.util.Date;
-
 import com.durgesh.types.Alien;
 
 import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 // Image Column is not working
 public class DAnnotations {
-  private static FileInputStream image;
 
   public static void main(String[] args) {
       // saveAlien(new Alien(1, "Hansa Parek", "Female", 20, new Date(), null, 50));
@@ -42,6 +38,7 @@ public class DAnnotations {
       .configure()
       .buildSessionFactory()
       .openSession();
+      
     Transaction tr = session.beginTransaction();
     session.save(alien);
     tr.commit();
