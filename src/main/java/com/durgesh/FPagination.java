@@ -10,7 +10,7 @@ import org.hibernate.*;
 public class FPagination {
   public static void main(String[] args) {
     Session session = new Configuration()
-      .configure("com/durgesh/_PaginationConfiguration.cfg.xml")
+      .configure("com/configuration/_PaginationConfiguration.cfg.xml")
       .buildSessionFactory()
       .openSession();
 

@@ -20,5 +20,7 @@
       <!-- Entity Configuration -->
       <mapping class="com.durgesh.types.Teacher" /> 
       <mapping class="com.durgesh.types.Alien" />
+      <mapping class="com.durgesh.types.Student" />
+      <mapping class="com.durgesh.types.Laptop" />
   </session-factory>
 </hibernate-configuration>

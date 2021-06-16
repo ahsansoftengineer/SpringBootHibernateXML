@@ -17,7 +17,7 @@ public class CClassConfigurationInConfig {
   public static Teacher getTeacher(int id){
     // Default path is java folder other wise explicitly provide the path and file of your configuration file.
     return new Configuration()
-      .configure("com/durgesh/_CustomNameHibernate.cfg.xml")
+      .configure("com/configuration/_CustomNameHibernate.cfg.xml")
       .buildSessionFactory()
       .openSession()
       .get(Teacher.class, id);
