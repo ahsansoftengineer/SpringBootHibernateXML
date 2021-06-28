@@ -13,7 +13,6 @@ public class BCustomConfiguration {
       .openSession()
       .get(Alien.class, 1);
     System.out.println(teacher);
-
     // session.getTransaction().commit();
   }
 }
